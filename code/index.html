@@ -4,27 +4,118 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 3</title>
-    <!-- dont forget to add a css file and link it here! -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <!-- video or image as a header is cool :) -->
-
-    <!-- Signup form -->
-
-    <section class="accordion">
-      <!-- Accordion -->
-      <h1>FAQ</h1>
-
-      <div class="question" id="section1">Section 1</div>
-      <div class="answer">
-        <p>Lorem ipsum...</p>
+    <header>
+      <div class="header-video-container">
+        <video class="header-video" autoplay muted loop>
+          <source src="./videos/Beetle-Nut-Trees.mp4" type="video/mp4">
+          <source src="./videos/Beetle-Nut-Trees.webm" type="video/webm">
+          "Your browser is not supported!"
+        </video>
       </div>
+      <div class="header-text-container">
+        <h1>Unusual trips to extraordinary places</h1>
+      </div>
+    </header>
 
-      <div class="question" id="section2">Section 2</div>
-      <div class="answer">
-        <p>Lorem ipsum...</p>
+    <section class="pictures-box">
+      <div class="container">
+        <h2>Must see places:</h2>
+        <div class="picture">
+
+          <a href="">
+            <img src="./images/see.jpg" alt="image">
+            <h2>Visit amazing church in water</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae molestias molestiae perferendis tempora veniam laborum ducimus voluptatum debitis nobis aspernatur et, aliquam ab, consequuntur cumque, maxime assumenda sint provident.</p>
+          </a>
+
+          <a href="">
+              <img src="./images/jungle.jpg" alt="image">
+              <h2>Breather the jungle, be the jungle!</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae molestias molestiae perferendis tempora veniam laborum ducimus voluptatum debitis nobis aspernatur et, aliquam ab, consequuntur cumque, maxime assumenda sint provident.</p>
+          </a>
+
+          <a href="">
+              <img src="./images/see.jpg" alt="image">
+              <h2>Dive into an adventure.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae molestias molestiae perferendis tempora veniam laborum ducimus voluptatum debitis nobis aspernatur et, aliquam ab, consequuntur cumque, maxime assumenda sint provident.</p>
+          </a>
+
+        </div>
       </div>
     </section>
-    <!-- dont forget to link the javascript file here! -->
+     <!-- Signup form -->
+    <div class="flex-box">
+      <section class="signup-form">
+        <div class="container">
+          <h2 id="header-title">Join us and experience the adventure!</h2>
+          <form action="http://httpbin.org/anything" method="POST">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+      
+            <label>
+              Surname
+              <input type="text" name="surname" placeholder="Your surname" required>
+            </label>
+      
+            <label for="">
+              E-mail
+              <input type="email" name="email" placeholder="Your E-mail" required>
+            </label>
+      
+            <label for="">
+              Password
+              <input type="password" name="password" placeholder="Your password" required>
+            </label>
+      
+            <div>
+              <input type="radio" id="woman" name="whoareu" value="woman" checked>
+              <label for="woman">woman</label>
+            </div>
+            <div>
+              <input type="radio" id="man" name="whoareu" value="man">
+              <label for="man">man</label>
+            </div>
+            <div>
+              <input type="radio" id="other" name="whoareu" value="other">
+              <label for="other">other</label>
+            </div>
+      
+            <label class="container-checkbox">I would like to receive the newsletter.
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+      
+            <label class="container-checkbox">I agree to the Terms & Conditions.
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+      
+            <button type="submit">Start the journey!</button>
+          </form>
+        </div>
+      </section>
+      <section class="accordion">
+        <!-- Accordion -->
+        <h2>FAQ</h2>
+      
+        <div class="question" id="section1">Section 1</div>
+        <div class="answer">
+          <p>Lorem ipsum...</p>
+        </div>
+      
+        <div class="question" id="section2">Section 2</div>
+        <div class="answer">
+          <p>Lorem ipsum...</p>
+        </div>
+      </section>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>

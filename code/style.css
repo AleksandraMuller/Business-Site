@@ -1,7 +1,150 @@
+/*** GENERAL SETTINGS ***/
+* {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+html, body {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1100px;
+}
+
+
+
+/*** HEADER ***/
+
+h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  z-index: 10;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 80%;
+  letter-spacing: 0;
+  background-color: #000;
+  opacity: .7;
+  border-radius: 10px;
+}
+
+header {
+  width: 100%;
+}
+
+.header-video-container {
+  width: 100%;
+  position: relative;
+}
+
+.header-video {
+  width: 100%; 
+  height: 80%;
+  object-fit: cover;
+}
+
+/*** FLEX PICTURE SECTION ***/
+
+.picture {
+  display: flex;
+  flex-direction: column;
+}
+
+.picture a {
+
+}
+
+.picture img {
+  width:100%; 
+  /* height:100%;  */
+  object-fit:cover; 
+}
+
+/*** SIGNUP FORM ***/
+
+.flex-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form {
+  width: 100%;
+}
+
 /* the + sign is used to select the sibling that comes immediately next to the element you selected.
 in this case it is the div with the answer class next to the div with the active class.
 this can be used for the FAQ-accordion. read more here: https://www.w3schools.com/css/css_combinators.asp */
 
 .active + .answer {
   /* some styling here */
+}
+
+/*** MEDIA QUERIES ***/
+
+@media(min-width: 500px) {
+
+  h1 {
+    font-size: 1.5rem;
+    top: 15%;
+    transform: translate(-50%, -15%);
+  }
+
+}
+
+@media(min-width: 668px) {
+
+  h1 {
+    font-size: 2rem;
+    top: 20%;
+    transform: translate(-50%, -25%);
+    letter-spacing: .2rem;
+    width: 70%;
+  }
+
+}
+
+@media(min-width: 1025px) {
+
+  h1 {
+    font-size: 3rem;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+  }
+
+  /*** PICTURE SECTION ***/
+  .picture {
+    flex-direction: row;
+  }
+  
+
+  /*** SIGNUP ***/
+
+  .flex-box {
+    flex-direction: row;
+  }
+
+  .signup-form,
+  .accordion {
+    width: 50%;
+  }
+
+}
+
+@media(min-width: 1500px) {
+
+  h1 {
+    font-size: 4rem;
+    letter-spacing: 1rem;
+  }
+
 }
