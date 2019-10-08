@@ -82,7 +82,7 @@ h2::after
 
 header {
   width: 100%;
-  background: #ecf0f1;
+  background: #eee;
 }
 
 .header-video-container {
@@ -99,7 +99,7 @@ header {
 /*** FLEX PICTURE SECTION ***/
 
 .pictures-box {
-  background: #ecf0f1;
+  background: #eee;
 }
 
 .picture {
@@ -130,15 +130,40 @@ header {
 
 /*** SIGNUP FORM ***/
 
+button {
+  background: #e67e22;
+  border: none;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 10px;
+  outline: none;
+  transition: all .2s;
+}
+
+button:hover,
+button:active {
+  background: #d35400;
+  transform: translateY(-2px);
+}
+
 .btn {
   text-align: center;
-  padding-bottom: 3rem;
+  /* padding-bottom: 3rem; */
+  margin-top: 2rem;
 }
 
 form {
   text-align: left;
   width: 60%;
   margin: 0 auto;
+  background: #eee;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .flex-box {
@@ -148,6 +173,7 @@ form {
 
 .signup-form {
   width: 100%;
+  margin-bottom: 3rem;
 }
 
 .input-text,
@@ -160,17 +186,41 @@ form {
 
 .container-checkbox input {
   display: block;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .radio-button {
-  display: inline-block;
+  display: block;
   margin-bottom: 1rem;
 }
+
+
+input{
+  outline-color: #e67e22; 
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: .7rem .5rem;
+  font-family: 'Cantarell', sans-serif;
+  color: #555858;
+}
+
+input::placeholder {
+  font-family: 'Cantarell', sans-serif;
+  color: #e67e22;
+}
+
 
 /*** ACCORDION ***/
 
 .accordion {
-  background: #ecf0f1;
+  background: #eee;
+}
+
+/*** FOOTER ***/
+
+footer {
+  background: #733d0d;
 }
 
 /* the + sign is used to select the sibling that comes immediately next to the element you selected.
@@ -208,6 +258,10 @@ this can be used for the FAQ-accordion. read more here: https://www.w3schools.co
     font-size: 1.8rem;
   }
 
+  .radio-button {
+    width: 30%;
+    display: inline-block;
+  }
   
 
 }
@@ -260,7 +314,7 @@ this can be used for the FAQ-accordion. read more here: https://www.w3schools.co
   }
 
   /*** ACCORDION ***/ 
-  
+
   .accordion {
     background: #fff;
   }
