@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 3</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cantarell:400,400i,700|Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
@@ -29,19 +30,19 @@
 
           <a href="">
             <img src="./images/see.jpg" alt="image">
-            <h2>Visit amazing church in water</h2>
+            <h3>Visit amazing church in water</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae molestias molestiae perferendis tempora veniam laborum ducimus voluptatum debitis nobis aspernatur et, aliquam ab, consequuntur cumque, maxime assumenda sint provident.</p>
           </a>
 
           <a href="">
               <img src="./images/jungle.jpg" alt="image">
-              <h2>Breather the jungle, be the jungle!</h2>
+              <h3>Breather the jungle, be the jungle!</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae molestias molestiae perferendis tempora veniam laborum ducimus voluptatum debitis nobis aspernatur et, aliquam ab, consequuntur cumque, maxime assumenda sint provident.</p>
           </a>
 
           <a href="">
               <img src="./images/see.jpg" alt="image">
-              <h2>Dive into an adventure.</h2>
+              <h3>Dive into an adventure.</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae molestias molestiae perferendis tempora veniam laborum ducimus voluptatum debitis nobis aspernatur et, aliquam ab, consequuntur cumque, maxime assumenda sint provident.</p>
           </a>
 
@@ -54,35 +55,35 @@
         <div class="container">
           <h2 id="header-title">Join us and experience the adventure!</h2>
           <form action="http://httpbin.org/anything" method="POST">
-            <label>
-              Name
+            <label class="input-text">
+              Name:
               <input type="text" name="name" placeholder="Your name" required>
             </label>
       
-            <label>
-              Surname
+            <label class="input-text">
+              Surname:
               <input type="text" name="surname" placeholder="Your surname" required>
             </label>
       
-            <label for="">
-              E-mail
+            <label class="input-text">
+              E-mail:
               <input type="email" name="email" placeholder="Your E-mail" required>
             </label>
       
-            <label for="">
-              Password
+            <label class="input-text">
+              Password:
               <input type="password" name="password" placeholder="Your password" required>
             </label>
       
-            <div>
+            <div class="radio-button">
               <input type="radio" id="woman" name="whoareu" value="woman" checked>
               <label for="woman">woman</label>
             </div>
-            <div>
+            <div class="radio-button">
               <input type="radio" id="man" name="whoareu" value="man">
               <label for="man">man</label>
             </div>
-            <div>
+            <div class="radio-button">
               <input type="radio" id="other" name="whoareu" value="other">
               <label for="other">other</label>
             </div>
@@ -96,8 +97,9 @@
               <input type="checkbox">
               <span class="checkmark"></span>
             </label>
-      
-            <button type="submit">Start the journey!</button>
+            <div class="btn">
+              <button type="submit">Start the journey!</button>
+            </div>
           </form>
         </div>
       </section>
@@ -105,15 +107,26 @@
         <!-- Accordion -->
         <h2>FAQ</h2>
       
-        <div class="question" id="section1">Section 1</div>
+        <div class="question" id="section1">To which countries do you offer travels to?</div>
         <div class="answer">
-          <p>Lorem ipsum...</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente at, neque soluta aliquid est. Corporis in beatae.</p>
         </div>
       
-        <div class="question" id="section2">Section 2</div>
+        <div class="question" id="section2">How to pay?</div>
         <div class="answer">
-          <p>Lorem ipsum...</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore explicabo quibusdam numquam? Molestias est sequi placeat voluptas vero ea magnam.</p>
         </div>
+
+        <div class="question" id="section1">To which countries do you offer travels to?</div>
+        <div class="answer">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente at, neque soluta aliquid est. Corporis in beatae.</p>
+        </div>
+
+        <div class="question" id="section1">To which countries do you offer travels to?</div>
+        <div class="answer">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente at, neque soluta aliquid est. Corporis in beatae.</p>
+        </div>
+
       </section>
     </div>
     <script src="./script.js"></script>
