@@ -11,97 +11,106 @@
   <body>
     <!-- video or image as a header is cool :) -->
     <header>
-      <div class="header-video-container">
-        <video class="header-video" autoplay muted loop>
-          <source src="./videos/Beetle-Nut-Trees.mp4" type="video/mp4">
-          <source src="./videos/Beetle-Nut-Trees.webm" type="video/webm">
-          "Your browser is not supported!"
-        </video>
-      </div>
+      <nav>
+        <div class="logo">
+            <ion-icon name="jet"></ion-icon>
+            <!-- <h3>TRIPOR</h3> -->
+        </div>
+        <div class="links">
+          <a href="#">Book a trip</a>
+          <a href="#">Reviews</a>
+          <a href="#">Sign up</a>
+        </div>
+      </nav>
+     
+      <video class="header-video" autoplay muted loop>
+        <source src="./videos/Beetle-Nut-Trees.mp4" type="video/mp4">
+        <source src="./videos/Beetle-Nut-Trees.webm" type="video/webm">
+        "Your browser is not supported!"
+      </video>
+    
       <div class="header-text-container">
-        <h1>Unusual trips to extraordinary places</h1>
+        <h1>Unusual trips <br><span>to extraordinary places</span></h1>
       </div>
     </header>
 
     <section class="pictures-box">
-      <div class="container">
+      <!-- <div class="container"> -->
         <h2>Must see places:</h2>
         <div class="picture">
 
-          <a href="">
-            <img src="./images/see.jpg" alt="image">
-            <h3>Visit amazing church in water</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae molestias molestiae perferendis tempora veniam laborum ducimus voluptatum debitis nobis aspernatur et, aliquam ab, consequuntur cumque, maxime assumenda sint provident.</p>
+          <a href="#">
+            <img src="./images/churchresized.png" alt="image">
+            <h3>Visit amazing church in water.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae molestias molestiae.</p>
           </a>
 
-          <a href="">
+          <a href="#">
               <img src="./images/jungle.jpg" alt="image">
-              <h3>Breather the jungle, be the jungle!</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae molestias molestiae perferendis tempora veniam laborum ducimus voluptatum debitis nobis aspernatur et, aliquam ab, consequuntur cumque, maxime assumenda sint provident.</p>
+              <h3>Breathe the jungle, be the jungle!</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae molestias molestiae perferen.</p>
           </a>
 
-          <a href="">
+          <a href="#">
               <img src="./images/see.jpg" alt="image">
               <h3>Dive into an adventure.</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae molestias molestiae perferendis tempora veniam laborum ducimus voluptatum debitis nobis aspernatur et, aliquam ab, consequuntur cumque, maxime assumenda sint provident.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae molestias molestiae perferendis.</p>
           </a>
 
         </div>
-      </div>
+      <!-- </div> -->
     </section>
      <!-- Signup form -->
     <div class="flex-box">
       <section class="signup-form">
-        <div class="container">
-          <h2 id="header-title">Join us on adventure!</h2>
-          <form action="http://httpbin.org/anything" method="POST">
-            <label class="input-text">
-              Name:
-              <input type="text" name="name" placeholder="Your name" required>
-            </label>
-      
-            <label class="input-text">
-              Surname:
-              <input type="text" name="surname" placeholder="Your surname" required>
-            </label>
-      
-            <label class="input-text">
-              E-mail:
-              <input type="email" name="email" placeholder="Your E-mail" required>
-            </label>
-      
-            <label class="input-text">
-              Password:
-              <input type="password" name="password" placeholder="Your password" required>
-            </label>
-      
-            <div class="radio-button">
-              <input type="radio" id="woman" name="whoareu" value="woman" checked>
-              <label for="woman">woman</label>
-            </div>
-            <div class="radio-button">
-              <input type="radio" id="man" name="whoareu" value="man">
-              <label for="man">man</label>
-            </div>
-            <div class="radio-button">
-              <input type="radio" id="other" name="whoareu" value="other">
-              <label for="other">other</label>
-            </div>
-      
-            <label class="container-checkbox">I would like to receive the newsletter.
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-      
-            <label class="container-checkbox">I agree to the Terms & Conditions.
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            <div class="btn">
-              <button type="submit">Start the journey</button>
-            </div>
-          </form>
-        </div>
+        <h2 id="header-title">Join us on adventure!</h2>
+        <form action="http://httpbin.org/anything" method="POST">
+          <label class="input-text">
+            Name:
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+    
+          <label class="input-text">
+            Surname:
+            <input type="text" name="surname" placeholder="Your surname" required>
+          </label>
+    
+          <label class="input-text">
+            E-mail:
+            <input type="email" name="email" placeholder="Your E-mail" required>
+          </label>
+    
+          <label class="input-text">
+            Password:
+            <input type="password" name="password" placeholder="Your password" required>
+          </label>
+    
+          <div class="radio-button">
+            <input type="radio" id="woman" name="whoareu" value="woman" checked>
+            <label for="woman">woman</label>
+          </div>
+          <div class="radio-button">
+            <input type="radio" id="man" name="whoareu" value="man">
+            <label for="man">man</label>
+          </div>
+          <div class="radio-button">
+            <input type="radio" id="other" name="whoareu" value="other">
+            <label for="other">other</label>
+          </div>
+    
+          <label class="container-checkbox">I would like to receive the newsletter.
+            <input type="checkbox" name="newsletter">
+            <span class="checkmark"></span>
+          </label>
+    
+          <label class="container-checkbox">I agree to the Terms & Conditions.
+            <input type="checkbox" name="terms">
+            <span class="checkmark"></span>
+          </label>
+          <div class="btn">
+            <button type="submit">Start the journey</button>
+          </div>
+        </form>
       </section>
       <section class="accordion">
         <!-- Accordion -->
@@ -128,7 +137,7 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore explicabo quibusdam numquam? Molestias est sequi placeat voluptas vero ea magnam.</p>
           </div>
   
-          <div class="question" id="section3">To which countries do you offer travels to?
+          <div class="question" id="section3">Do I need insurance?
             <span>
               <div class="plus">&#43;</div>
               <div class="minus">&#8722;</div>
@@ -138,7 +147,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente at, neque soluta aliquid est. Corporis in beatae.</p>
           </div>
   
-          <div class="question" id="section4">To which countries do you offer travels to?
+          <div class="question" id="section4">What to expect?
             <span>
               <div class="plus">&#43;</div>
               <div class="minus">&#8722;</div>
@@ -151,8 +160,15 @@
       </section>
     </div>
     <footer>
-      <p>Contact us</p>
+      <div class="left">
+        <a href="#">Contact</a> 
+        <a href="#">Reviews</a>
+      </div>
+      <div class="right">
+        <p>I used the video from coverr.co and pictures from unsplash.</p>
+      </div>
     </footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
