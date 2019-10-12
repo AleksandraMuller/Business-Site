@@ -135,8 +135,6 @@ ion-icon {
   display: none;
 }
 
-
-
 /*** FLEX PICTURE SECTION ***/
 
 .pictures-box {
@@ -146,21 +144,17 @@ ion-icon {
 .picture {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  width:95%; 
+ 
 }
 
 .picture a {
-  margin-bottom: 3rem; 
+  margin: 0 1rem 3rem 1rem; 
 }
-
-
 
 .picture img,
 .picture h3,
 .picture p {
-  width:95%;
+  width: 100%;
   text-align: center; 
 }
 
@@ -295,14 +289,14 @@ footer {
   display: flex;
   justify-content: space-between;
   background: #733d0d;
-  height: 10rem;
+  height: 6rem;
   margin-top: 3rem;
   font-family: 'Fjalla One', sans-serif;
 }
 
 footer div {
   color: #fff;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 footer .left {
@@ -365,6 +359,10 @@ footer a:visited {
 
   .links a {
     font-size: 16px;
+  }
+
+  .picture {
+    /* margin-left: 4%; */
   }
 
   /*** SIGNUP SECTION ***/
