@@ -298,6 +298,7 @@ footer {
   height: 6rem;
   margin-top: 3rem;
   font-family: 'Fjalla One', sans-serif;
+  font-size: 12px;
 }
 
 footer div {
@@ -369,6 +370,11 @@ footer a:visited {
   }
 
   /*** FOOTER ***/
+
+  footer {
+    font-size: 16px;
+  }
+
   footer a:hover,
   footer a:active {
     color: #ddd;
@@ -414,9 +420,9 @@ footer a:visited {
   }
 
   .picture img {
-    opacity: .7;
+    opacity: .8;
   }
-  
+
   .picture img:hover {
     transform: scale(1.05);
     border: #e67e22 2px solid;
