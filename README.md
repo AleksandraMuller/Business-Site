@@ -14,6 +14,6 @@ I have build a landing page for business site by the use of HTML, CSS and some J
 
 ## Deployed version 🚀
 
-https://business-site-aleksandra.netlify.com/
+https://business-site-aleksandra.netlify.app/
 
 
